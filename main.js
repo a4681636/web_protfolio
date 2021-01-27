@@ -4,3 +4,5 @@ $("#banner").slick({
      dots:true
     
     });
+    
+$("#works").slick();    

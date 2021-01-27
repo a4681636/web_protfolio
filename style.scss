@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&family=Potta+One&family=Roboto+Condensed&display=swap");
 $color-gray: #666;
 $color-white: #e9e9e9;
-$color-brown:rgb(99, 49, 49) ;
-
+$color-brown:rgb(8, 8, 8) ;
+$text-shadow:0 2px 5px rgba(0,0,0,0.2);
+$box-shadow:0 5px 10px rgba(0,0,0,0.2);
+#nav-box {
+    height: 100vh;
+    position: relative;
+}
 nav {
     display: grid;
     grid-template-columns: 15% auto 15%;
@@ -10,6 +15,10 @@ nav {
     background: $color-gray;
     padding: 30px;
     color: $color-white;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    opacity: 0.8;
     #link {
         a {
             color: $color-white;
@@ -17,13 +26,16 @@ nav {
             text-decoration: none;
             transition: 0.5s;
             display: inline-block;
+            text-shadow: $text-shadow;
 
             &:hover {
                 color: $color-brown;
                 transform: scale(1.5);
             }
+            
         }
     }
+    
 
     #social {
         a {
@@ -31,7 +43,7 @@ nav {
             padding: 0 10px;
 
             &:hover {
-                filter: invert(48%) sepia(36%) saturate(840%) hue-rotate(63deg) brightness(95%) contrast(83%);
+                filter: invert(9%) sepia(100%) saturate(6428%) hue-rotate(1deg) brightness(96%) contrast(113%);
             } 
             img{
                 width: 20PX;
@@ -76,4 +88,79 @@ nav {
         }
     }
     
+}
+// 最新消息
+
+#news {
+    width: 960px;
+    margin: 0 auto;
+
+    #news-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        
+
+        img {
+            width: 100%;
+
+       }
+       h3{
+           text-align: center;
+           padding: 10px;
+       }
+       p{
+           line-height: 1.5;
+           font-size: 14px;
+           padding-bottom: 10px;
+       }
+       .news-card{
+        box-shadow: $box-shadow;
+       }
+    }
+
+}
+// 聯絡我
+form {
+    width: 1280px;
+    margin: 0 auto;
+    input{
+        width: 45%;
+        padding: 10px 5px;
+    }
+    textarea {
+            width: 100%;
+            height: 300px;
+            margin: 30px 0;
+
+        }
+    
+}
+
+
+
+
+
+// 按鈕樣式
+.btn {
+    background: $color-gray;
+    color:white;
+    padding: 20px 30px;
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    font-size: 20px;
+    transition: 0.5s;
+    border: none;
+
+    &:hover {
+        border:1px solid $color-gray;
+        background: $color-white;
+        color: $color-brown;
+
+    }
+}
+
+.title-big {
+    text-align: center;
 }

@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>柏霆個人網站</title>
-    
-<!-- Add the slick-theme.css if you want default styling -->
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<!-- Add the slick-theme.css if you want default styling -->
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-<link rel="stylesheet" href="./style.css">
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <!-- 導覽列 -->
     <nav>
@@ -27,7 +29,7 @@
         <div id="social">
             <a href=""><img src="./photo/fbb.png" alt="FACEBOOK"></a>
             <a href=""><img src="./photo/iconfinder_ig_instagram_insta_photo_5340248 (1).png" alt="IG"></a>
-        
+
             <a href=""><img src="./photo/yt.png" alt="youtube"></a>
             <a href=""><img src="./photo/github.png" alt="github"></a>
         </div>
@@ -37,52 +39,93 @@
 
 
     </nav>
-<!-- 輪播 -->
-<div id="banner">
-    <div class="banner1">
-        <h1>標題一</h1>
+    <!-- 輪播 -->
+    <div id="banner">
+        <div class="banner1">
+            <h1>標題一</h1>
+            <h2>標題二</h2>
+        </div>
+        <div class="banner2">
+            <h1>標題一</h1>
+            <h2>標題二</h2>
+        </div>
+        <div class="banner3">
+            <h1>標題一</h1>
+            <h2>標題二</h2>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./main.js"></script>
+
+    <!-- 最新消息 -->
+    <section id="news">
+        <h1 class="title-big">新消息</h1>
+        <div id="news-content">
+            <div class="news-card">
+                <img src="./photo/banner1.jpg" alt="">
+                <h3>標三</h3>
+                <p>The goal was to be able to create custom style sheets and sheets andsheets and</p>
+                <button class="btn">按鈕</button>
+            </div>
+            <div class="news-card">
+                <img src="./photo/banner1.jpg" alt="">
+                <h3>標三</h3>
+                <p>The goal was to be able to create custom style sheets and sheets andsheets and</p>
+                <button class="btn">按鈕</button>
+            </div>
+            <div class="news-card">
+                <img src="./photo/banner1.jpg" alt="">
+                <h3>標三</h3>
+                <p>The goal was to be able to create custom style sheets and sheets andsheets and</p>
+                <button class="btn">按鈕</button>
+            </div>
+
+        </div>
+<!-- 最新作品 -->
+<h1 class="title-big">最新作品</h1>
+<div id="works">
+    <div class="word-card">
+        <img src="./photo/Q1.jpg" alt="">
         <h2>標題二</h2>
     </div>
-    <div class="banner2">
-        <h1>標題一</h1>
+    <div class="word-card">
+        <img src="./photo/Q2.jpg" alt="">
         <h2>標題二</h2>
     </div>
-    <div class="banner3">
-        <h1>標題一</h1>
+    <div class="word-card">
+        <img src="./photo/Q3.jpg" alt="">
+        <h2>標題二</h2>
+    </div>
+    <div class="word-card">
+        <img src="./photo/Q1.jpg" alt="">
+        <h2>標題二</h2>
+    </div>
+    <div class="word-card">
+        <img src="./photo/Q2.jpg" alt="">
+        <h2>標題二</h2>
+    </div>
+    <div class="word-card">
+        <img src="./photo/Q3.jpg" alt="">
         <h2>標題二</h2>
     </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="./main.js"></script>
 
-<!-- 最新消息 -->
-<section id="news">
-<h1>新消息</h1>
-<div class="news-card">
-    <img src="" alt="">
-    <h3>標三</h3>
-    <p></p>
-    <button>按鈕</button>
-</div>
-<div class="news-card">
-    <img src="" alt="">
-    <h3>標三</h3>
-    <p></p>
-    <button>按鈕</button>
-</div>
-<div class="news-card">
-    <img src="" alt="">
-    <h3>標三</h3>
-    <p></p>
-    <button>按鈕</button>
-</div>
+
+<h1 class="title-big">聯絡我</h1>
+
+<form action="">
+
+<input type="text" name="user-name">
+<input type="email" name="user-email" >
+<textarea></textarea>
+<input type="submit" value="送出">
+
+</form>
 
 
 
-
-
-
-</section>
+    </section>
 </body>
+
 </html>
