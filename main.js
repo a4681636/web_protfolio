@@ -5,4 +5,7 @@ $("#banner").slick({
     
     });
     
-$("#works").slick();    
+$("#works").slick({
+        slidesToShow:3,
+        slidesToScroll:2
+      });
