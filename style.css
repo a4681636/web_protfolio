@@ -231,11 +231,41 @@ input[type=email] {
   text-align: center;
 }
 
-#works img {
+#works {
+  width: 1280pX;
+  margin: 0 auto;
+}
+
+div:focus {
+  outline: none;
+}
+
+.word-card img {
   width: 300px;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.word-card img:hover {
+  border-radius: 4PX;
+}
+
+.word-card img h2 {
+  text-align: center;
+  margin-top: 10px;
+  color: #666;
+}
+
+footer {
+  background: #666;
+  text-align: center;
+  padding: 30px;
+  margin-top: 100PX;
 }
 /*# sourceMappingURL=style.css.map */

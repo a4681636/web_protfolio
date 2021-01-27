@@ -176,20 +176,47 @@ input[type=email]{
     text-align: center;
 }
 
-#works {
+#works { 
+    width: 1280pX;
+    margin:0 auto;
+}
+
+    div:focus {
+    outline: none;
+  
+
+}
+    
+
+
     .word-card{
         
-    }
+    
         img{
             width: 300px;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 50%;
-            
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.5s;
+            &:hover {
+                border-radius: 4PX;
         }
+        h2 {
+            text-align: center;
+            margin-top: 10px;
+            color:$color-gray;
    
     
-}
-footer{
+         }
+        }
+    }
 
+
+footer {
+    background: $color-gray;
+    text-align: center;
+    padding: 30px;
+    margin-top:100PX;
 }
